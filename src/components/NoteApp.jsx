@@ -32,13 +32,11 @@ class NoteApp extends React.Component {
                 {
                     id: +new Date(),
                     title,
-                    createdAt: +new Date().toLocaleDateString(),
+                    createdAt: +new Date().toISOString(),
                     body,
                 }
                 ]
             }
-
-            showFormattedDate(createdAt);
         });
     }
  
